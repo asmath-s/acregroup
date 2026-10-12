@@ -1,0 +1,185 @@
+.contactus {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.contactform {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 25px;
+  border-radius: 15px;
+}
+input,
+select,
+textarea {
+  margin-bottom: 20px;
+  font-family: "Sen", sans-serif;
+}
+.sumbitbtn {
+  text-align: end;
+}
+.sumbitbtn button {
+  background-color: #0ea003;
+  color: #fff;
+  border: 1px solid #0ea003;
+  font-family: "Sen", sans-serif;
+}
+.sumbitbtn button:hover {
+  background-color: #ffa800;
+  border-color: #ffa800;
+}
+.btn:first-child:active {
+  background-color: #ffa800;
+  border-color: #ffa800;
+}
+.getintouch {
+  margin-bottom: 5px;
+}
+.getintouch h2 {
+  font-family: "Comic Neue", cursive;
+  color: #000;
+}
+.contactbox {
+  display: flex;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  height: 165px;
+}
+.contacticon img {
+  width: 55px;
+  background-color: #0ea003;
+  padding: 5px;
+  border-radius: 100px;
+}
+.contacticon1 img {
+  width: 35px;
+  background-color: #0ea003;
+  padding: 5px;
+  border-radius: 100px;
+}
+.contacticon2 img {
+  width: 35px;
+  background-color: #0ea003;
+  padding: 5px;
+  border-radius: 100px;
+}
+.contactinfo {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contactinfo h4 {
+  color: #0ea003;
+}
+.contactsocial a i {
+  color: #0ea003;
+  font-size: 25px;
+  margin-right: 15px;
+}
+.contactsocial a:hover i {
+  color: #ffa800;
+}
+.projectlocation {
+  padding-top: 20px;
+}
+.projectlocationtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.projectlocationtitle h2 {
+  font-family: "Comic Neue", cursive;
+  color: #000;
+}
+.otherprojects {
+  margin-bottom: 25px;
+}
+.otherprojectimg img {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.otherprojectcontent h3 {
+  color: #000;
+  font-family: "Courgette", cursive;
+  margin-bottom: 10px;
+}
+.otherprojectcontent a {
+  color: #0ea003;
+  display: flex;
+  align-items: center;
+}
+.otherprojectcontent a span {
+  font-size: 20px;
+  padding-right: 10px;
+}
+iframe {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contactbox {
+    height: 165px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .contactus {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .getintouch {
+    margin-top: 40px;
+  }
+  .contactbox {
+    height: 150px;
+  }
+  .contacticon img {
+    width: 65px;
+  }
+  .projectlocation {
+    padding-top: 0px;
+  }
+  .otherprojectimg img {
+    margin-bottom: 15px;
+  }
+  .otherprojectcontent h3 {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  .otherprojectcontent a span {
+    font-size: 16px;
+    padding-right: 8px;
+  }
+  .otherprojectcontent a i {
+    font-size: 12px;
+    padding-top: 4px;
+  }
+  .otherprojects {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contactus {
+    padding-bottom: 25px;
+  }
+  input,
+  select,
+  textarea {
+    margin-bottom: 10px;
+  }
+  .getintouch {
+    margin-top: 20px;
+  }
+  .contacticon img {
+    width: 40px;
+  }
+  .contactbox {
+    height: 130px;
+  }
+  .contactsocial a i {
+    font-size: 20px;
+    margin-right: 12px;
+  }
+  .projectlocationtitle {
+    margin-bottom: 20px;
+  }
+}

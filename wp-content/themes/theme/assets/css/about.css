@@ -1,0 +1,402 @@
+.aboutus {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.aboutuscontent {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutuscontent h1 {
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 10px;
+}
+.aboutuscontent h1 span {
+  color: #0ea003;
+}
+.aboutuscontent img {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, 30%);
+}
+.aboutusimg {
+  text-align: center;
+}
+.aboutusimg img {
+  width: 75%;
+}
+.certificates {
+  padding-bottom: 50px;
+}
+.certificate1,
+.certificate2 {
+  display: flex;
+  align-items: center;
+  background-color: #0a6403;
+  padding: 20px;
+  border-radius: 15px;
+}
+.certificatecontnet {
+  padding-left: 15px;
+}
+.certificatecontnet h2 {
+  font-family: "Libre Baskerville", serif;
+  color: #ffb629;
+  font-weight: 700;
+}
+.certificatecontnet p {
+  color: #fff;
+}
+
+/* Vison Mission */
+.visionmission {
+  padding-bottom: 50px;
+}
+.visionmissionbox {
+  position: relative;
+  background-color: #1c2868;
+  padding: 30px;
+  border-radius: 20px;
+  z-index: -1;
+}
+.treebgimg img {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: translate(80%, 20%);
+  opacity: 0.2 !important;
+}
+.visionimg,
+.missionimg {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.visionpara,
+.missionpara {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.visionpara h2,
+.missionpara h2 {
+  color: #ffb629;
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+}
+.visionpara p,
+.missionpara p {
+  color: #fff;
+}
+
+/* About Counter */
+.aboutcounter {
+  background: linear-gradient(to right, #fafafa, #eeeeee);
+  margin-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+.topimg {
+  position: absolute;
+  top: -12px;
+  width: 100%;
+}
+.bottomimg {
+  position: absolute;
+  bottom: -12px;
+  width: 100%;
+}
+.counterbg img {
+  position: absolute;
+  bottom: -8px;
+  left: -20px;
+  z-index: -1;
+}
+.aboutcountertittle h4 {
+  color: #000;
+  text-align: center;
+}
+.aboutcountertittle h1 {
+  color: #1c2868;
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+}
+.aboutcounterbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 30px;
+}
+.counterbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #1c2868;
+  border-radius: 15px;
+  margin-right: 15px;
+  padding: 20px;
+}
+.countercontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.countercontent h2 {
+  color: #000;
+  text-align: center;
+}
+.countercontent p {
+  color: #1c2868;
+  text-align: center;
+}
+
+/* FAQ */
+.faq {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.faqtitle h1 {
+  color: #000;
+  font-family: "Sen", sans-serif;
+  margin-bottom: 15px;
+}
+.aboutcontactbtn button {
+  background-color: #ffb629;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 8px 12px;
+  margin-top: 20px;
+}
+.aboutcontactbtn button span {
+  padding-right: 5px;
+}
+.aboutcontactbtn button i {
+  transform: rotate(-35deg);
+  transition: transform 0.2s ease-in-out;
+}
+.aboutcontactbtn button:hover i {
+  transform: rotate(0deg);
+}
+
+/* FAQ Accordion */
+.accordion-item:first-of-type {
+  border-radius: 12px !important;
+  margin-bottom: 8px;
+}
+.accordion-item:not(:first-of-type) {
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
+  border-radius: 12px !important;
+  margin-bottom: 8px;
+}
+.accordion-button {
+  background-color: #e9e9e9;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+}
+.accordion-button:focus {
+  border-color: rgba(0, 0, 0, 0.125);
+  box-shadow: none;
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  content: "";
+  background-image: url(../images/rightarrow.png);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  transition: transform 0.2s ease-in-out;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/rightarrow.png);
+  transform: rotate(-180deg);
+}
+
+/* Responsive */
+@media only screen and (max-width: 1400px) {
+  .topimg {
+    top: -8px;
+  }
+  .bottomimg {
+    bottom: -8px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .certificate1,
+  .certificate2 {
+    padding: 22px;
+  }
+  .certificate1 img,
+  .certificate2 img {
+    width: 185px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .aboutus {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #aboutpara {
+    order: 2;
+  }
+  #aboutimage {
+    order: 1;
+  }
+  .aboutusimg {
+    text-align: start;
+    margin-bottom: 20px;
+  }
+  .aboutusimg img {
+    width: 50%;
+  }
+  .aboutuscontent h1 {
+    margin-bottom: 2px;
+    font-size: 30px;
+  }
+  .aboutuscontent img {
+    transform: translate(-50%, -40%);
+  }
+  .treebgimg img {
+    transform: translate(20%, 20%);
+  }
+  .certificates {
+    padding-bottom: 30px;
+  }
+  .certificate1 {
+    margin-bottom: 15px;
+  }
+  .certificatecontnet h2,
+  .visionpara h2,
+  .missionpara h2 {
+    font-size: 24px;
+  }
+  .treebgimg img {
+    transform: translate(50%, 20%);
+    width: 50%;
+  }
+  .aboutcounter {
+    margin-bottom: 20px;
+  }
+  .aboutcounterbox {
+    grid-template-columns: 1fr 1fr;
+  }
+  .counterbox {
+    margin-bottom: 15px;
+  }
+  .topimg {
+    top: -6px;
+  }
+  .bottomimg {
+    bottom: -6px;
+  }
+  .faq {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .faqtitle {
+    margin-bottom: 20px;
+  }
+  .faqtitle h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .aboutcontactbtn button {
+    margin-top: 8px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .visionmissionbox {
+    padding: 20px;
+  }
+  #missioncontent {
+    order: 3;
+  }
+  #missionpic {
+    order: 4;
+  }
+  .visionpara,
+  .missionpara {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .treebgimg img {
+    display: none;
+  }
+  .aboutcounter {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .aboutuscontent img {
+    transform: translate(0%, -57%);
+  }
+  .aboutuscontent h1 {
+    margin-bottom: 2px;
+    font-size: 26px;
+  }
+  .aboutus {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .certificate1 img,
+  .certificate2 img {
+    width: 130px;
+  }
+  .certificatecontnet h2,
+  .visionpara h2,
+  .missionpara h2 {
+    font-size: 20px;
+  }
+  .certificate1 {
+    margin-bottom: 10px;
+  }
+  .certificate1,
+  .certificate2 {
+    padding: 14px;
+  }
+  .certificates {
+    padding-bottom: 20px;
+  }
+  .visionmission {
+    padding-bottom: 25px;
+  }
+  .aboutcounter {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .topimg {
+    top: -2px;
+  }
+  .bottomimg {
+    bottom: -2px;
+  }
+  .aboutcountertittle h1 {
+    font-size: 22px;
+  }
+  .counterbox {
+    padding: 10px;
+  }
+  .faq {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  .faqtitle h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+}

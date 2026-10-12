@@ -1,0 +1,3 @@
+Oct 12 2026 06:46:05
+{"type":2,"message":"file_get_contents(http:\/\/ident.me): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond","file":"C:\\Users\\asmat.ASMATHS\\Local Sites\\acregroup\\app\\public\\wp-content\\plugins\\all-in-one-wp-security-and-firewall\\classes\\wp-security-helper.php","line":238}
+

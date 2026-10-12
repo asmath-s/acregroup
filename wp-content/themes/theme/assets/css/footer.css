@@ -1,0 +1,184 @@
+footer {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  z-index: 10;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 50px 50px 0 0;
+  background-color: #fff;
+}
+/* footer::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0a6403;
+  opacity: 0.9;
+  position: absolute;
+  z-index: -1;
+} */
+.logoside a img {
+  width: 185px;
+  margin-bottom: 15px;
+}
+.logoside p {
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.sociallinks {
+  display: flex;
+  align-items: center;
+}
+.sociallinks p {
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.sociallinks a i {
+  color: #000;
+  margin-left: 15px;
+  font-size: 20px;
+}
+.sociallinks a:hover i {
+  color: #0a6403;
+}
+.quicklinks {
+  padding-left: 30px;
+}
+.quicklinks h4,
+.servicelinks h4,
+.contactlinks h4 {
+  color: #0a6403;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+}
+.quick li a,
+.service li a {
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.contactpoint li a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.contactpoint li a i {
+  font-size: 16px;
+}
+.contactpoint li a span {
+  color: #000;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.quick li a,
+.service li a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+.quick li a::before,
+.service li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: right 0.6s ease;
+}
+.quick li:hover a,
+.service li:hover a {
+  color: #0a6403;
+}
+.quick li:hover a::before,
+.service li:hover a::before {
+  right: 0;
+  background-color: #0a6403;
+}
+
+.hoverimgfooter {
+  display: none;
+  width: 25px;
+}
+.contactpoint li a:hover i {
+  display: none;
+}
+.contactpoint li a:hover .hoverimgfooter {
+  display: block;
+}
+.contactpoint li a:hover span {
+  color: #0a6403;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright a {
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright a i {
+  padding: 0 5px;
+}
+.copyright a span {
+  padding-right: 5px;
+  color: #000;
+}
+.footernoicon i {
+  width: 25px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .contactpoint li a span {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  footer {
+    background-size: 600px;
+  }
+  .sociallinks a i {
+    margin-top: -10px;
+  }
+  .logoside p {
+    margin-bottom: 8px;
+  }
+  .quicklinks h4,
+  .servicelinks h4,
+  .contactlinks h4 {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  footer {
+    background-size: 910px;
+  }
+  .sociallinks a i {
+    margin-top: -10px;
+  }
+  .quicklinks {
+    padding-left: 0px;
+  }
+  .quick li a,
+  .service li a {
+    font-size: 16px;
+  }
+  .quicklinks h4,
+  .servicelinks h4,
+  .contactlinks h4 {
+    margin-bottom: 10px;
+  }
+}

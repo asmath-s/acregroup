@@ -1,0 +1,330 @@
+header {
+  position: fixed;
+  z-index: 9;
+  background-color: #fff;
+  top: 0;
+  /* left: 50%;
+  margin: 0 !important;
+  border-radius: 20px;
+  transform: translate(-50%, -50%); */
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.headertop {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.topcontacts,
+.socialicons {
+  display: flex;
+  align-items: center;
+}
+.topcontacts a,
+.socialicons a {
+  padding-left: 15px;
+  color: #fff;
+}
+.topcontacts a span {
+  padding-left: 8px;
+  font-size: 16px;
+}
+.socialicons p,
+.socialicons a i {
+  color: #fff;
+}
+.headeritem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.logo1 {
+  width: 280px;
+}
+.logo2 {
+  position: relative;
+  left: 88px;
+  width: 225px;
+}
+.mainmenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+}
+.mainmenu li a {
+  margin: 0 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+.mainmenu li,
+.dropmenuitem li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.mainmenu li a,
+.dropmenuitem li a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.mainmenu li a::before,
+.dropmenuitem li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: right 0.6s ease;
+}
+
+.mainmenu li:hover a::before,
+.dropmenuitem li:hover a::before {
+  right: 0;
+  background-color: #00415f;
+}
+.mainmenu .mainlogo:hover a::before {
+  display: none;
+}
+
+.dropmenu {
+  position: relative;
+  padding: 30px 20px;
+}
+.dropmenu a {
+  color: #000;
+  font-size: 18px;
+  border: none;
+  font-weight: 500;
+}
+.dropmenu a i {
+  padding-left: 5px;
+}
+.dropmenuitem li a {
+  color: #000;
+  font-size: 16px;
+  padding: 0px;
+  margin: 0;
+}
+.dropmenuitem {
+  list-style: none;
+  background-color: #fff;
+  border-radius: 12px;
+  position: absolute;
+  top: 65px;
+  display: none;
+  z-index: 99;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.dropmenuitem li {
+  padding: 5px 20px;
+}
+.dropmenuitem li:first-child {
+  margin-top: 15px;
+}
+.dropmenuitem li:last-child {
+  margin-bottom: 15px;
+}
+.dropmenu a:hover {
+  color: #00415f;
+}
+.dropmenu:hover i {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
+  padding-left: 5px;
+}
+.dropmenu:hover .dropmenuitem {
+  display: block;
+}
+.mainmenu li:hover a {
+  color: #00415f;
+}
+.callbtn {
+  background-color: #ffb629;
+  border-radius: 50px;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+}
+.callbtn span {
+  padding-left: 10px;
+}
+.callimg1 {
+  width: 22px;
+}
+.callimg {
+  width: 22px;
+  display: none;
+}
+.callbtn:hover .callimg {
+  display: block;
+}
+.callbtn:hover .callimg1 {
+  display: none;
+}
+.callbtn:hover span {
+/*   padding-left: 6px; */
+  color: #fff;
+}
+.mainmenu:hover .callbtn::before {
+  display: none;
+}
+
+.mobilelogo {
+  display: none;
+}
+.closebtn,
+.navbar-toggler,
+.mobilefollow {
+  display: none;
+}
+.dropmenu li:first-child {
+  padding-top: 15px;
+}
+.dropmenu li:last-child {
+  padding-bottom: 0;
+}
+@media only screen and (max-width: 1200px) {
+  .mainmenu {
+    padding-left: 20px;
+  }
+  .mainmenu li a {
+    margin: 0px 10px;
+  }
+  .callbtn {
+    padding: 8px 14px;
+  }
+  .callbtn span {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .topbar {
+    display: none;
+  }
+  header {
+    width: 100%;
+  }
+  .headeritem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-toggler {
+    display: block;
+    color: #00415f;
+  }
+  .navbar-toggler i,
+  .closebtn i {
+    font-size: 25px;
+  }
+  .mainmenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background-color: #fff;
+    z-index: 9999;
+    height: 100vh;
+    align-items: start;
+    width: 260px;
+    padding-top: 40px;
+  }
+  .closebtn {
+    display: none;
+    z-index: 5;
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    z-index: 99999;
+    background-color: #fff;
+    transition: all 0.25s ease-in;
+    transition: right 0.25s ease-in-out;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 8;
+    display: none;
+    overflow: hidden;
+  }
+  .navbar-hide {
+    display: none;
+  }
+  .navbar-show {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .show-overlay {
+    display: block;
+  }
+  .mainmenu li,
+  .dropmenu {
+    padding: 8px 15px;
+    width: 100%;
+  }
+  .mobilefollow {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mobilefollowlinks a i {
+    font-size: 18px;
+    padding: 5px 15px;
+  }
+  .dropmenu:hover .dropmenuitem {
+    display: block;
+    position: relative;
+    top: 0;
+    background: transparent;
+    color: #000;
+    box-shadow: none;
+    padding: 0;
+  }
+  .mainmenu li a {
+    margin: 0;
+    font-size: 16px;
+  }
+  .dropmenu li {
+    padding: 8px 10px;
+  }
+  .dropmenu li:first-child {
+    padding-top: 0;
+  }
+  .dropmenu li:last-child {
+    margin-bottom: 0;
+  }
+  .dropmenu a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    font-size: 16px;
+    width: 100%;
+  }
+  .dropmenu li a {
+    color: #000;
+    width: 100%;
+  }
+  .dropmenu a i {
+    float: right;
+  }
+}

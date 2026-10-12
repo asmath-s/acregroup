@@ -1,0 +1,789 @@
+.mainbanner {
+  position: relative;
+}
+.bannerslider {
+  position: relative; /* Ensure this is positioned relative for absolute children */
+  min-height: 98vh;
+}
+.bigbanner {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 10s ease-out;
+  transition: 10s ease-out;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.owl-carousel .owl-item.active .bigbanner {
+  transform: scale(1.1);
+}
+.bigbanner::after {
+  background: #000;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  background-repeat: no-repeat;
+}
+.bannercontent {
+        position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+  z-index: 9;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  width: 45%;
+}
+.bannercontent h2 {
+  color: #fff;
+  font-family: "Libre Baskerville", serif;
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+.bannercontent p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.bannercontent p span {
+  font-family: "Libre Baskerville", serif;
+}
+
+.homeabout {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+}
+.homeaboutcontent {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hometitleline {
+  display: flex;
+  align-items: center;
+}
+.homeaboutcontent h2 {
+  color: #23741d;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.homecounter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 30px;
+}
+.counteritem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #0a6403;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 20px;
+}
+.counttext {
+  text-align: center;
+  padding-top: 15px;
+}
+.counttext h3 {
+  font-size: 20px;
+}
+.counttext p {
+  font-size: 18px;
+}
+.ongoingprojects {
+  padding-bottom: 50px;
+}
+.ongoingprojectstitle {
+  text-align: center;
+}
+.redsandlefarm {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.redsnadleimg {
+  position: relative;
+}
+.redsnadleimg img {
+  position: absolute;
+  top: -28px;
+  width: 85%;
+}
+.redsandalcontent {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.redsandalcontent h3 {
+  color: #ffb629;
+  margin-bottom: 10px;
+}
+.redsandalcontent p {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.clubongoingprojects {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.kodaiclub {
+  padding-bottom: 50px;
+}
+.kodaiimg1 {
+  display: flex;
+  padding-top: 30px;
+}
+.kodaiimg1 img {
+  margin-right: 15px;
+}
+.kodaiimg {
+  text-align: center;
+}
+.kodaiimg img {
+  width: 65%;
+}
+.videosec {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.videotitle {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.videocontent {
+  text-align: center;
+}
+.reelscontent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 40px;
+}
+.reelsvideo video {
+  border: 1px solid #292929;
+  border-radius: 20px;
+  width: 300px;
+}
+.testimonials {
+  padding-top: 50px;
+  padding-bottom: 0px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.testimonials .topdesingimg {
+  position: absolute;
+  top: -12px;
+  width: 100%;
+}
+.bottomdesingimg {
+  position: absolute;
+  bottom: -12px;
+  width: 100%;
+}
+.testimonialtitle {
+  text-align: center;
+  color: #ffb629;
+  margin-bottom: 50px;
+}
+.stars i {
+  color: #ffb629;
+  margin-bottom: 15px;
+}
+.testimonialcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.testimonialcontent p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.testimonialcontent h4 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+.testimonialcontent span {
+  color: #b7b7b7;
+}
+.enquirynow {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.enquirynowimg {
+  padding: 50px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+.enquirynowimg h1 {
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+  font-size: 55px;
+}
+.enquirynowimg img {
+  height: 100px;
+  transition: transform 0.5s;
+}
+.enquirynowimg img:hover {
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.newtestimonial {
+  background: linear-gradient(to right, #fafafa, #eeeeee);
+  padding: 50px 0;
+  position: relative;
+}
+.maskimage {
+  position: absolute;
+  top: 0;
+  width: 138px;
+}
+
+/* New Layout code */
+.newredsandalfarm {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.newredsandalimg {
+  display: flex;
+  align-items: center;
+}
+.newredsandalimg2 {
+  display: flex;
+  flex-direction: column;
+}
+.newredsandalimg3 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+.newredsandalimg2 span,
+.newredsandalimg3 span {
+  padding: 10px;
+  color: #ebebeb;
+}
+.newredsandalcontent p {
+  color: #fff;
+}
+.newredsandalcontent p,
+.newkodaiclubcontent p,
+.newsamudracontent p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.newredsandalcontent {
+  padding-top: 50px;
+}
+.newredsandalcontent h3,
+.newredsandalcontent h3 span {
+  color: #ffb629;
+}
+.newkodaiclubcontent h3 span {
+  color: #23741d;
+}
+.redsandalpoints li {
+  color: #ffffff;
+}
+.redsandalpoints li i {
+  color: #ffb629;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.homeviewbtn {
+  margin-top: 15px;
+}
+.viewbrocherbtn1 button {
+  background-color: #ffb629;
+  border: 2px solid #ffb629;
+  padding: 8px 15px;
+  color: #000;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+.viewbrocherbtn1 button:hover {
+  background-color: transparent;
+  border: 2px solid #ffb629;
+  color: #fff;
+}
+.viewmorebtn1 button {
+  background-color: transparent;
+  border: 2px solid #ffb629;
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 15px;
+}
+.viewmorebtn1 button:hover {
+  background-color: #ffb629;
+  border: 2px solid #ffb629;
+  color: #000;
+}
+.newkodaiclub {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.newkodaiclubcontent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.newkodaiclubimg1 {
+  text-align: end;
+}
+.newkodaiclubimg1 img {
+  width: 75%;
+}
+.newkodaiclubimgbox {
+  display: grid;
+  grid-template-columns: 1.68fr 1fr 1fr;
+  margin-top: 25px;
+  gap: 10px;
+}
+.newkodaiclubimg2 img,
+.newkodaiclubimg3 img,
+.newkodaiclubimg4 img {
+  width: 100%;
+}
+.viewbrocherbtn2 button {
+  background-color: #1c2868;
+  border: 2px solid #1c2868;
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+.viewbrocherbtn2 button:hover {
+  background-color: transparent;
+  border: 2px solid #1c2868;
+  color: #000;
+}
+.viewmorebtn2 button {
+  background-color: transparent;
+  border: 2px solid #1c2868;
+  padding: 8px 15px;
+  color: #000;
+  border-radius: 15px;
+}
+.viewmorebtn3:hover {
+  color: #fff;
+  background-color: #1c2868;
+}
+.newagroimg {
+  text-align: center;
+}
+.newagroimg img {
+  width: 60%;
+}
+.newtestimonialheading {
+  position: relative;
+  left: 20%;
+}
+.newtestimonialheading h2 {
+  color: #000;
+  padding-top: 10px;
+}
+.newtestimonialslide {
+  position: relative;
+  top: 30px;
+}
+.newtestimonialbox {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 15px;
+  height: 265px;
+}
+.newtestimonialcontent p {
+  font-size: 16px;
+  padding-top: 10px;
+}
+.newtestimonial-carousel .owl-nav .owl-prev {
+  left: 84%;
+  bottom: 104%;
+  border-radius: 100px;
+}
+.newtestimonial-carousel .owl-nav .owl-next {
+  bottom: 104%;
+  right: 0px;
+  border-radius: 100px;
+}
+.newtestimonial-carousel .owl-nav .owl-prev i {
+  color: #23741d;
+  background-color: transparent;
+  border: 2px solid #23741d;
+  padding: 9px 10px;
+  font-size: 14px;
+  border-radius: 100px;
+}
+.newtestimonial-carousel .owl-nav .owl-next i {
+  color: #fff;
+  background-color: #23741d;
+  padding: 10px 11px;
+  font-size: 14px;
+  border-radius: 100px;
+}
+/* Responsive */
+@media only screen and (max-width: 1400px) {
+  .homeaboutcontent {
+    padding-left: 30px;
+  }
+  .homecounter {
+    padding-top: 20px;
+  }
+  .counteritem {
+    padding: 5px;
+  }
+  .redsnadleimg img {
+    top: -21px;
+    width: 90%;
+  }
+  .kodaiimg {
+    text-align: end;
+    height: 100%;
+  }
+  .kodaiimg img {
+    height: 100%;
+    width: 65%;
+  }
+  .testimonials .topdesingimg {
+    top: -10px;
+  }
+  .bottomdesingimg {
+    bottom: -10px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .bannercontent {
+    width: 60%;
+  }
+  .counttext h3 {
+    font-size: 18px;
+  }
+  .counttext p {
+    font-size: 16px;
+  }
+  .redsnadleimg img {
+    top: -30px;
+    width: 100%;
+    left: -35px;
+  }
+  .redsandalcontent {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .kodaiimg img {
+    height: 100%;
+    width: 78%;
+  }
+  .kodaiimg1 img {
+    margin-right: 15px;
+    width: 250px;
+  }
+  .newkodaiclubimg1 img {
+    width: 100%;
+  }
+  .videocontent iframe {
+    height: 520px;
+  }
+  .testimonials .topdesingimg {
+    top: -8px;
+  }
+  .bottomdesingimg {
+    bottom: -8px;
+  }
+  .videocontent video {
+    width: 935px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .bannerslider {
+    min-height: 75vh;
+  }
+  .bannercontent {
+    width: 80%;
+  }
+  .bannercontent h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .discoverbtn button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  .homeabout {
+    padding-top: 30px;
+    padding-bottom: 45px;
+    flex-direction: column;
+  }
+  .homeaboutimg {
+    width: 435px;
+    padding-bottom: 30px;
+  }
+  .ongoingprojects {
+    padding-bottom: 0px;
+  }
+  .redsnadleimg img {
+    position: relative;
+    width: 50%;
+    top: 40px;
+    left: 0;
+  }
+  .redsandlefarm {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .redsandalcontent {
+    padding-bottom: 40px;
+    margin-top: 35px;
+  }
+  .newkodaiclubimg1 img {
+    display: none;
+  }
+  .clubongoingprojects {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .kodaiclub {
+    padding-bottom: 20px;
+  }
+  #kodaiproject2 {
+    order: 1 !important;
+  }
+  #kodaiproject1 {
+    order: 2 !important;
+  }
+  .kodaiimg {
+    text-align: start;
+  }
+  .kodaiimg img {
+    width: 50%;
+    padding-bottom: 25px;
+  }
+  .kodaiimg1 img {
+    width: 300px;
+  }
+  .newagroimg {
+    margin-top: 30px;
+    text-align: start;
+  }
+  .newtestimonialbox {
+    height: 225px;
+  }
+  .newtestimonialheading {
+    left: 10%;
+  }
+  .maskimage {
+    width: 175px;
+  }
+  .videosec {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .videocontent iframe {
+    height: 400px;
+  }
+  .enquirynowimg {
+    padding: 20px 25px;
+  }
+  .enquirynowimg h1 {
+    font-size: 42px;
+  }
+  .enquirynowimg img {
+    height: 70px;
+  }
+  .videocontent video {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .newtestimonialheading {
+    left: 0%;
+  }
+  .maskimage {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .bannerslider {
+    min-height: 65vh;
+  }
+  .bannercontent h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .homeaboutcontent {
+    padding-left: 10px;
+  }
+  .homecounter {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+  }
+  .counteritem {
+    margin: 5px 5px;
+  }
+  .redsnadleimg img {
+    position: relative;
+    width: 60%;
+    top: 40px;
+    left: 0;
+  }
+  .kodaiimg1 img {
+    width: 230px;
+  }
+  .videotitle {
+    padding-bottom: 15px;
+  }
+  .videocontent iframe {
+    height: 290px;
+  }
+  .testimonials {
+    padding-top: 30px;
+  }
+  .testimonialtitle {
+    margin-bottom: 20px;
+  }
+  .testimonials .topdesingimg {
+    top: -6px;
+  }
+  .newtestimonialbox {
+    height: 250px;
+  }
+  .newtestimonialcontent p {
+    font-size: 14px;
+  }
+  .bottomdesingimg {
+    bottom: -6px;
+  }
+  .testimonialimg {
+    text-align: end;
+  }
+  .testimonialimg img {
+    width: 350px;
+  }
+  .enquirynow {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .videocontent video {
+    width: 610px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .testimonials .topdesingimg {
+    top: -4px;
+  }
+  .bottomdesingimg {
+    bottom: -4px;
+  }
+  .videocontent video {
+    width: 510px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .newtestimonial-carousel .owl-nav .owl-prev {
+    left: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .bannerslider {
+    min-height: 55vh;
+  }
+  .bannercontent {
+    width: 100%;
+  }
+  .bannercontent h2 {
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+  .bannercontent p {
+    font-size: 14px;
+  }
+  .homeaboutimg {
+    width: 300px;
+  }
+  .discoverbtn button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  .kodaiimg1 img {
+    width: 160px;
+  }
+  .videocontent iframe {
+    height: 260px;
+  }
+  .enquirynowimg h1 {
+    font-size: 34px;
+  }
+  .enquirynowimg img {
+    height: 55px;
+  }
+  .newtestimonial-carousel .owl-nav .owl-prev {
+    left: 75%;
+  }
+  .newtestimonialbox {
+    height: 325px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .bannercontent h2 {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+  .bannercontent p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .kodaiimg1 img {
+    width: 130px;
+  }
+  .testimonials .topdesingimg {
+    top: -2px;
+  }
+  .bottomdesingimg {
+    bottom: -2px;
+  }
+  .enquirynowimg h1 {
+    font-size: 28px;
+  }
+  .enquirynowimg img {
+    height: 50px;
+  }
+  .videocontent video {
+    width: 340px;
+  }
+}

@@ -1,0 +1,1838 @@
+/* Scoped to the Sea View Villa page only. */
+/* ==========================================================================
+   Sea View Villa - Pixel-Perfect Styling Matching Figma Design Frame
+   ========================================================================== */
+
+/* --- CSS Reset & Variables --- */
+.sea-view-page, .sea-view-page *, .sea-view-page *::before, .sea-view-page *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sea-view-page{
+  --primary-navy: #072846;
+  --deep-navy: #002d45;
+  --dark-navy-bg: #00253e;
+  --btn-navy: #00335a;
+  --gold-tan: #d5ba90;
+  --accent-gold: #ffb800;
+  --accent-gold-hover: #e5a500;
+  --off-white-bg: #f8f8f6;
+  --card-cyan-bg: #eff6f8;
+  --text-dark: #1c2833;
+  --text-muted: #555555;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans:
+    "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-script: "Great Vibes", cursive;
+}
+
+.sea-view-page{
+  scroll-behavior: smooth;
+}
+
+.sea-view-page{
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sea-view-page img{
+  max-width: 100%;
+  display: block;
+}
+
+.sea-view-page a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Global Container */
+.sea-view-page .container{
+  width: 95%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Common Section Heading */
+.sea-view-page .section-heading{
+  font-family: var(--font-serif);
+  font-size: 46px;
+  font-weight: 600;
+  color: var(--primary-navy);
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: -0.5px;
+}
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+.sea-view-page .hero-section{
+  position: relative;
+  width: 100%;
+  background-color: var(--off-white-bg);
+  overflow: hidden;
+}
+
+.sea-view-page .hero-wrapper{
+  display: flex;
+  min-height: 724px;
+  position: relative;
+}
+
+/* Left Image with Slanted Cut */
+.sea-view-page .hero-left{
+  position: relative;
+  width: 58%;
+  min-height: 724px;
+  clip-path: polygon(0 0, 100% 0, 88.5% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 88.5% 100%, 0 100%);
+  overflow: hidden;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.sea-view-page .hero-bg-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  transform: scale(1.02);
+  transition: transform 0.8s ease;
+}
+
+.sea-view-page .hero-left:hover .hero-bg-img{
+  transform: scale(1.05);
+}
+
+/* Cursive Script in Hero */
+.sea-view-page .hero-script-tag{
+    position: absolute;
+    top: 165px;
+    left: 45px;
+    z-index: 3;
+    font-family: var(--font-script);
+    font-size: 52px;
+    line-height: 1.15;
+    color: #ffffff;
+    transform: rotate(-12deg);
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+    user-select: none;
+    width: 345px;
+}
+
+/* Right Content Area */
+.sea-view-page .hero-right{
+  position: relative;
+  flex: 1;
+  background-color: var(--off-white-bg);
+  display: flex;
+  align-items: center;
+  padding: 160px 70px 50px 40px;
+  z-index: 1;
+}
+
+/* Decorative Palm Leaf in Top Right */
+.sea-view-page .hero-palm-leaf{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 320px;
+  max-height: 500px;
+  pointer-events: none;
+  z-index: 1;
+  object-fit: contain;
+  object-position: top right;
+}
+
+.sea-view-page .hero-content{
+  position: relative;
+  z-index: 2;
+  max-width: 540px;
+}
+
+.sea-view-page .hero-eyebrow{
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  color: var(--gold-tan);
+  margin-bottom: 12px;
+}
+
+.sea-view-page .hero-title{
+  font-family: var(--font-serif);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--primary-navy);
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.sea-view-page .hero-location{
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.45;
+  color: var(--primary-navy);
+  margin-bottom: 24px;
+}
+
+.sea-view-page .hero-desc{
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--deep-navy);
+  margin-bottom: 34px;
+  max-width: 490px;
+}
+
+/* Hero Feature Badges */
+.sea-view-page .hero-features{
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 38px;
+}
+
+.sea-view-page .feature-badge{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 110px;
+}
+
+.sea-view-page .feature-badge-icon{
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.sea-view-page .feature-badge-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sea-view-page .feature-badge span{
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--primary-navy);
+  display: block;
+}
+
+/* Hero Explore CTA Button */
+.sea-view-page .hero-cta-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background-color: var(--btn-navy);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 18px 40px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 51, 90, 0.25);
+}
+
+.sea-view-page .hero-cta-btn svg{
+  transition: transform 0.3s ease;
+}
+
+.sea-view-page .hero-cta-btn:hover{
+  background-color: #002240;
+  box-shadow: 0 8px 25px rgba(0, 51, 90, 0.35);
+  transform: translateY(-2px);
+}
+
+.sea-view-page .hero-cta-btn:hover svg{
+  transform: translateX(6px);
+}
+
+/* ==========================================================================
+   2. ABOUT SECTION
+   ========================================================================== */
+.sea-view-page .about-section{
+  padding-top: 100px;
+  background-color: #ffffff;
+}
+
+.sea-view-page .about-grid{
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.sea-view-page .about-text-col{
+  padding-right: 20px;
+}
+
+.sea-view-page .about-title{
+  font-family: var(--font-serif);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary-navy);
+  margin-bottom: 28px;
+  letter-spacing: -0.5px;
+}
+
+.sea-view-page .about-desc{
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--deep-navy);
+  margin-bottom: 34px;
+}
+
+.sea-view-page .about-focus-title{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-navy);
+  margin-bottom: 22px;
+}
+
+.sea-view-page .about-bullets-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 24px;
+}
+
+.sea-view-page .bullet-item{
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-dark);
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.sea-view-page .bullet-asterisk{
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 18px;
+}
+
+/* About Images (2 rounded photos side-by-side) */
+.sea-view-page .about-images-col{
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.sea-view-page .about-img-wrap{
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  height: 465px;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.sea-view-page .about-img-wrap:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+.sea-view-page .about-img-wrap.img-1{
+  width: 58%;
+}
+
+.sea-view-page .about-img-wrap.img-2{
+  width: 42%;
+}
+
+.sea-view-page .about-img-wrap img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   3. PROJECT STORIES SECTION
+   ========================================================================== */
+.sea-view-page .stories-section{
+  padding-top: 100px;
+  background-color: #ffffff;
+}
+
+.sea-view-page .stories-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.sea-view-page .story-card{
+  background-color: var(--card-cyan-bg);
+  border-radius: 60px 10px 20px 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 45, 69, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.sea-view-page .story-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 45, 69, 0.12);
+}
+
+.sea-view-page .story-img-wrap{
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 10px;
+}
+
+.sea-view-page .story-img-wrap img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.sea-view-page .story-card:hover .story-img-wrap img{
+  transform: scale(1.04);
+}
+
+.sea-view-page .story-content{
+  padding: 30px 28px 36px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sea-view-page .story-content h3{
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--primary-navy);
+  margin-bottom: 14px;
+  min-height: 70px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sea-view-page .story-content p{
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-dark);
+}
+
+/* ==========================================================================
+   4. WHY CHOOSE SEA VIEW VILLA ?
+   ========================================================================== */
+.sea-view-page .why-choose-section{
+  padding-top: 100px;
+  background-color: #ffffff;
+}
+
+.sea-view-page .why-choose-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.sea-view-page .why-card{
+  position: relative;
+  height: 472px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.sea-view-page .why-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.sea-view-page .why-card:hover img{
+  transform: scale(1.06);
+}
+
+.sea-view-page .why-card-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 45, 69, 0) 35%,
+    rgba(0, 45, 69, 0.6) 65%,
+    rgba(0, 45, 69, 0.95) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 35px 32px;
+  transition: background 0.4s ease;
+}
+
+.sea-view-page .why-card:hover .why-card-overlay{
+  background: linear-gradient(
+    180deg,
+    rgba(0, 45, 69, 0.1) 25%,
+    rgba(0, 45, 69, 0.7) 60%,
+    rgba(0, 45, 69, 0.98) 100%
+  );
+}
+
+.sea-view-page .why-card-overlay h3{
+  font-family: var(--font-sans);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================================================
+   5. VIDEO SECTION: "A Closer Look at Your Future"
+   ========================================================================== */
+.sea-view-page .video-section{
+  padding-top: 100px;
+  background-color: #ffffff;
+}
+
+.sea-view-page .video-carousel-wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.sea-view-page .video-nav-btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+  flex-shrink: 0;
+  outline: none;
+}
+
+.sea-view-page .video-nav-btn img{
+  width: 58px;
+  height: 58px;
+}
+
+.sea-view-page .video-nav-btn:hover{
+  transform: scale(1.08);
+  opacity: 0.85;
+}
+
+.sea-view-page .video-nav-btn:active{
+  transform: scale(0.96);
+}
+
+/* Main Video Player Container with Asymmetric Curves */
+.sea-view-page .video-player-container{
+  position: relative;
+  flex: 1;
+  max-width: 1240px;
+  height: 616px;
+  border-radius: 120px 0 80px 50px;
+  overflow: hidden;
+  background-color: #d7d7d7;
+  box-shadow: 0 18px 45px rgba(0, 45, 69, 0.14);
+}
+
+.sea-view-page .main-video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #000;
+  border-radius: 120px 0 80px 50px;
+  transition: opacity 0.4s ease;
+}
+
+/* Play/Pause Overlay */
+.sea-view-page .video-play-overlay{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.sea-view-page .video-play-overlay.hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.sea-view-page .play-pulse-btn{
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  border: none;
+  color: var(--primary-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.sea-view-page .play-pulse-btn svg{
+  margin-left: 5px;
+  fill: var(--primary-navy);
+}
+
+.sea-view-page .play-pulse-btn:hover{
+  transform: scale(1.1);
+  background: #ffffff;
+}
+
+/* Video Indicators / Dots */
+.sea-view-page .video-indicators{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.sea-view-page .video-dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d0d7dd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sea-view-page .video-dot.active{
+  background-color: var(--primary-navy);
+  width: 28px;
+  border-radius: 12px;
+}
+
+/* ==========================================================================
+   6. FOOTER / CTA BANNER SECTION: "Visit Sea View Villa"
+   ========================================================================== */
+.sea-view-page .cta-banner-section{
+  position: relative;
+  background-color: var(--deep-navy);
+  color: #ffffff;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.sea-view-page .cta-container{
+  display: flex;
+  align-items: center;
+  min-height: 430px;
+  width: 100%;
+}
+
+/* Left Half Image with Gradient Fade */
+.sea-view-page .cta-left-wrap{
+  position: relative;
+  width: 48%;
+  min-height: 430px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.sea-view-page .cta-bg-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  display: block;
+}
+
+.sea-view-page .cta-fade-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 45, 69, 0) 40%,
+    rgba(0, 45, 69, 0.7) 75%,
+    var(--deep-navy) 100%
+  );
+  pointer-events: none;
+}
+
+/* Cursive Script in Footer */
+.sea-view-page .cta-script-tag{
+position: absolute;
+    top: 131px;
+    left: 45px;
+    z-index: 3;
+    font-family: var(--font-script);
+    font-size: 56px;
+    line-height: 1.5;
+    color: #ffffff;
+    transform: rotate(-10deg);
+    text-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    user-select: none;
+    width: 360px;
+}
+
+/* Right Content Area */
+.sea-view-page .cta-right-content{
+  flex: 1;
+  padding: 50px 70px 50px 40px;
+  z-index: 2;
+}
+
+.sea-view-page .cta-title{
+  font-family: var(--font-serif);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--accent-gold);
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.sea-view-page .cta-desc p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #ffffff;
+  max-width: 580px;
+  margin-bottom: 34px;
+}
+
+/* Schedule Site Visit CTA Button */
+.sea-view-page .cta-schedule-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background-color: var(--accent-gold);
+  color: #000000;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 36px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(255, 184, 0, 0.25);
+}
+
+.sea-view-page .cta-schedule-btn svg{
+  transition: transform 0.3s ease;
+}
+
+.sea-view-page .cta-schedule-btn:hover{
+  background-color: var(--accent-gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 184, 0, 0.35);
+}
+
+.sea-view-page .cta-schedule-btn:hover svg{
+  transform: translateX(6px);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN / MEDIA QUERIES
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .sea-view-page .hero-title{
+    font-size: 58px;
+  }
+  .sea-view-page .hero-left{
+    width: 52%;
+  }
+  .sea-view-page .hero-right{
+    padding: 40px 30px;
+  }
+  .sea-view-page .hero-palm-leaf{
+    width: 240px;
+  }
+  .sea-view-page .about-title{
+    font-size: 40px;
+  }
+  .sea-view-page .about-img-wrap{
+    height: 420px;
+  }
+  .sea-view-page .stories-grid, .sea-view-page .why-choose-grid{
+    gap: 22px;
+  }
+  .sea-view-page .story-img-wrap{
+    height: 380px;
+  }
+  .sea-view-page .why-card{
+    height: 400px;
+  }
+  .sea-view-page .video-player-container{
+    height: 500px;
+  }
+  .sea-view-page .cta-title{
+    font-size: 42px;
+  }
+  .sea-view-page .cta-script-tag{
+    font-size: 48px;
+  }
+}
+
+/* Tablets (max-width: 991px) */
+@media (max-width: 991px) {
+  /* Section Headings & Spacing */
+  .sea-view-page .section-heading{
+    font-size: 34px;
+    margin-bottom: 34px;
+    letter-spacing: -0.3px;
+  }
+
+  .sea-view-page .about-section{
+    padding: 60px 0 55px;
+  }
+
+  .sea-view-page .stories-section, .sea-view-page .why-choose-section{
+    padding: 55px 0 60px;
+  }
+
+  .sea-view-page .video-section{
+    padding: 55px 0 65px;
+  }
+
+  /* Hero Section */
+  .sea-view-page .hero-wrapper{
+    flex-direction: column;
+    min-height: auto;
+    margin-top: 105px;
+  }
+
+  .sea-view-page .hero-left{
+    width: 100%;
+    height: 340px;
+    min-height: auto;
+    clip-path: none;
+    -webkit-clip-path: none;
+  }
+
+  .sea-view-page .hero-script-tag{
+    font-size: 32px;
+    top: 24px;
+    left: 28px;
+    line-height: 1.15;
+  }
+
+  .sea-view-page .hero-right{
+    padding: 38px 30px 44px;
+  }
+
+  .sea-view-page .hero-palm-leaf{
+    width: 160px;
+    opacity: 0.35;
+  }
+
+  .sea-view-page .hero-content{
+    max-width: 600px;
+  }
+
+  .sea-view-page .hero-eyebrow{
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    margin-bottom: 8px;
+  }
+
+  .sea-view-page .hero-title{
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 14px;
+  }
+
+  .sea-view-page .hero-location{
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+  }
+
+  .sea-view-page .hero-desc{
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    max-width: 520px;
+  }
+
+  .sea-view-page .hero-features{
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+
+  .sea-view-page .feature-badge{
+    width: 100px;
+  }
+
+  .sea-view-page .feature-badge-icon{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+
+  .sea-view-page .feature-badge span{
+    font-size: 12px;
+  }
+
+  .sea-view-page .hero-cta-btn{
+    padding: 14px 32px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  /* About Section */
+  .sea-view-page .about-grid{
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .sea-view-page .about-text-col{
+    padding-right: 0;
+    max-width: 650px;
+  }
+
+  .sea-view-page .about-title{
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+
+  .sea-view-page .about-desc{
+    font-size: 15.5px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .sea-view-page .about-focus-title{
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .sea-view-page .about-bullets-grid{
+    gap: 12px 20px;
+  }
+
+  .sea-view-page .bullet-item{
+    font-size: 14.5px;
+  }
+
+  .sea-view-page .about-images-col{
+    display: flex;
+    gap: 18px;
+    justify-content: flex-start;
+    max-width: 650px;
+  }
+
+  .sea-view-page .about-img-wrap{
+    height: 280px;
+    border-radius: 20px;
+  }
+
+  .sea-view-page .about-img-wrap.img-1{
+    width: 58%;
+  }
+
+  .sea-view-page .about-img-wrap.img-2{
+    width: 42%;
+  }
+
+  /* Stories Section */
+  .sea-view-page .stories-grid{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .sea-view-page .story-card{
+    border-radius: 36px 10px 16px 16px;
+  }
+
+  .sea-view-page .story-img-wrap{
+    height: 240px;
+    border-top-left-radius: 36px;
+  }
+
+  .sea-view-page .story-content{
+    padding: 20px 18px 24px;
+  }
+
+  .sea-view-page .story-content h3{
+    font-size: 20px;
+    min-height: 52px;
+    margin-bottom: 8px;
+  }
+
+  .sea-view-page .story-content p{
+    font-size: 13.5px;
+    line-height: 1.45;
+  }
+
+  /* Why Choose Section */
+  .sea-view-page .why-choose-grid{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .sea-view-page .why-card{
+    height: 260px;
+    border-radius: 18px;
+  }
+
+  .sea-view-page .why-card-overlay{
+    padding: 22px 18px;
+  }
+
+  .sea-view-page .why-card-overlay h3{
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  /* Video Section */
+  .sea-view-page .video-carousel-wrapper{
+    gap: 16px;
+    max-width: 760px;
+  }
+
+  .sea-view-page .video-nav-btn img{
+    width: 42px;
+    height: 42px;
+  }
+
+  .sea-view-page .video-player-container{
+    height: 380px;
+    border-radius: 60px 0 40px 24px;
+  }
+
+  .sea-view-page .main-video{
+    border-radius: 60px 0 40px 24px;
+  }
+
+  .sea-view-page .play-pulse-btn{
+    width: 64px;
+    height: 64px;
+  }
+
+  .sea-view-page .play-pulse-btn svg{
+    width: 26px;
+    height: 26px;
+  }
+
+  .sea-view-page .video-indicators{
+    margin-top: 22px;
+  }
+
+  /* CTA Section */
+  .sea-view-page .cta-container{
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .sea-view-page .cta-left-wrap{
+    width: 100%;
+    height: 240px;
+    min-height: auto;
+  }
+
+  .sea-view-page .cta-fade-overlay{
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 45, 69, 0) 30%,
+      rgba(0, 45, 69, 0.75) 75%,
+      var(--deep-navy) 100%
+    );
+  }
+
+  .sea-view-page .cta-script-tag{
+        font-size: 45px;
+        top: 45px;
+        left: 28px;
+        width: 220px;
+  }
+
+  .sea-view-page .cta-right-content{
+    padding: 34px 30px 46px;
+    max-width: 650px;
+  }
+
+  .sea-view-page .cta-title{
+    font-size: 34px;
+    margin-bottom: 14px;
+  }
+
+  .sea-view-page .cta-desc{
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+  }
+
+  .sea-view-page .cta-schedule-btn{
+    padding: 14px 30px;
+    font-size: 15px;
+  }
+}
+
+/* Mobiles & Small Tablets (max-width: 767px) */
+@media (max-width: 767px) {
+  .sea-view-page .container{
+    width: 100%;
+    padding: 0 18px;
+  }
+
+  .sea-view-page .section-heading{
+    font-size: 26px;
+    margin-bottom: 26px;
+  }
+
+  .sea-view-page .about-section{
+    padding: 45px 0 40px;
+  }
+
+  .sea-view-page .stories-section, .sea-view-page .why-choose-section{
+    padding: 42px 0 45px;
+  }
+
+  .sea-view-page .video-section{
+    padding: 42px 0 48px;
+  }
+
+  /* Hero Section */
+  .sea-view-page .hero-left{
+    height: 250px;
+  }
+
+  .sea-view-page .hero-script-tag{
+    font-size: 26px;
+    top: 18px;
+    left: 20px;
+    display: none;
+  }
+
+  .sea-view-page .hero-right{
+    padding: 28px 18px 34px;
+  }
+
+  .sea-view-page .hero-palm-leaf{
+    width: 120px;
+    opacity: 0.25;
+  }
+
+  .sea-view-page .hero-eyebrow{
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+  }
+
+  .sea-view-page .hero-title{
+    font-size: 34px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+
+  .sea-view-page .hero-location{
+    font-size: 13px;
+    letter-spacing: 1.6px;
+    margin-bottom: 14px;
+  }
+
+  .sea-view-page .hero-desc{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .sea-view-page .hero-features{
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .sea-view-page .feature-badge{
+    width: auto;
+  }
+
+  .sea-view-page .feature-badge-icon{
+    width: 36px;
+    height: 36px;
+    margin-bottom: 6px;
+  }
+
+  .sea-view-page .feature-badge span{
+    font-size: 11.5px;
+  }
+
+  .sea-view-page .hero-cta-btn{
+    width: 100%;
+    max-width: 380px;
+    padding: 13px 20px;
+    font-size: 13.5px;
+    letter-spacing: 1.2px;
+  }
+
+  /* About Section */
+  .sea-view-page .about-title{
+    font-size: 26px;
+    margin-bottom: 14px;
+  }
+
+  .sea-view-page .about-desc{
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 16px;
+  }
+
+  .sea-view-page .about-focus-title{
+    font-size: 14.5px;
+    margin-bottom: 12px;
+  }
+
+  .sea-view-page .about-bullets-grid{
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 16px;
+  }
+
+  .sea-view-page .bullet-item{
+    font-size: 13.5px;
+  }
+
+  .sea-view-page .about-images-col{
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+  }
+
+  .sea-view-page .about-img-wrap{
+    height: 200px;
+    border-radius: 16px;
+  }
+
+  .sea-view-page .about-img-wrap.img-1{
+    width: 58%;
+  }
+
+  .sea-view-page .about-img-wrap.img-2{
+    width: 42%;
+  }
+
+  /* Stories Section */
+  .sea-view-page .stories-grid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .sea-view-page .story-card{
+    border-radius: 28px 10px 14px 14px;
+  }
+
+  .sea-view-page .story-img-wrap{
+    height: 210px;
+    border-top-left-radius: 28px;
+  }
+
+  .sea-view-page .story-content{
+    padding: 16px 16px 18px;
+  }
+
+  .sea-view-page .story-content h3{
+    font-size: 18px;
+    min-height: auto;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .sea-view-page .story-content p{
+    font-size: 13.5px;
+    line-height: 1.45;
+  }
+
+  /* Why Choose Section */
+  .sea-view-page .why-choose-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .sea-view-page .why-card{
+    height: 200px;
+    border-radius: 16px;
+  }
+
+  .sea-view-page .why-card-overlay{
+    padding: 16px 14px;
+  }
+
+  .sea-view-page .why-card-overlay h3{
+    font-size: 15.5px;
+    line-height: 1.25;
+  }
+
+  /* Video Section */
+  .sea-view-page .video-carousel-wrapper{
+    position: relative;
+    width: 100%;
+    gap: 0;
+  }
+
+  .sea-view-page .video-player-container{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 32px 0 22px 14px;
+  }
+
+  .sea-view-page .main-video{
+    border-radius: 32px 0 22px 14px;
+  }
+
+  .sea-view-page .video-nav-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .sea-view-page .video-nav-btn.prev-btn{
+    left: 8px;
+  }
+
+  .sea-view-page .video-nav-btn.next-btn{
+    right: 8px;
+  }
+
+  .sea-view-page .video-nav-btn img{
+    width: 36px;
+    height: 36px;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
+  }
+
+  .sea-view-page .play-pulse-btn{
+    width: 52px;
+    height: 52px;
+  }
+
+  .sea-view-page .play-pulse-btn svg{
+    width: 22px;
+    height: 22px;
+  }
+
+  .sea-view-page .video-indicators{
+    margin-top: 18px;
+    gap: 8px;
+  }
+
+  /* CTA Section */
+  .sea-view-page .cta-left-wrap{
+    height: 190px;
+  }
+
+  .sea-view-page .cta-fade-overlay{
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 45, 69, 0) 25%,
+      rgba(0, 45, 69, 0.75) 75%,
+      var(--deep-navy) 100%
+    );
+  }
+
+  .sea-view-page .cta-script-tag{
+font-size: 40px;
+        top: 35px;
+        left: 40px;
+        width: 190px;
+  }
+
+  .sea-view-page .cta-right-content{
+    padding: 26px 20px 36px;
+  }
+
+  .sea-view-page .cta-title{
+    font-size: 27px;
+    margin-bottom: 12px;
+  }
+
+  .sea-view-page .cta-desc{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .sea-view-page .cta-schedule-btn{
+    width: 100%;
+    max-width: 380px;
+    justify-content: center;
+    padding: 13px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Standard Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .sea-view-page .container{
+    padding: 0 16px;
+  }
+
+  .sea-view-page .section-heading{
+    font-size: 23px;
+    margin-bottom: 22px;
+  }
+
+  .sea-view-page .about-section{
+    padding: 34px 0 30px;
+  }
+
+  .sea-view-page .stories-section, .sea-view-page .why-choose-section{
+    padding: 32px 0 35px;
+  }
+
+  .sea-view-page .video-section{
+    padding: 32px 0 36px;
+  }
+
+  /* Hero Section */
+  .sea-view-page .hero-left{
+    height: 205px;
+  }
+
+  .sea-view-page .hero-script-tag{
+    font-size: 21px;
+    top: 15px;
+    left: 16px;
+    display: none;
+  }
+
+  .sea-view-page .hero-right{
+    padding: 22px 14px 28px;
+  }
+
+  .sea-view-page .hero-palm-leaf{
+    width: 95px;
+    opacity: 0.2;
+  }
+
+  .sea-view-page .hero-eyebrow{
+    font-size: 11px;
+    letter-spacing: 1.6px;
+    margin-bottom: 6px;
+  }
+
+  .sea-view-page .hero-title{
+    font-size: 28px;
+    line-height: 1.12;
+    margin-bottom: 10px;
+  }
+
+  .sea-view-page .hero-location{
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+
+  .sea-view-page .hero-desc{
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .sea-view-page .hero-features{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .sea-view-page .feature-badge{
+    flex: 1;
+    max-width: 100px;
+    width: auto;
+  }
+
+  .sea-view-page .feature-badge-icon{
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+  }
+
+  .sea-view-page .feature-badge span{
+    font-size: 10.5px;
+    line-height: 1.25;
+  }
+
+  .sea-view-page .hero-cta-btn{
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 12.5px;
+    letter-spacing: 1px;
+    gap: 8px;
+    border-radius: 8px;
+  }
+
+  .sea-view-page .hero-cta-btn svg{
+    width: 18px;
+    height: 18px;
+  }
+
+  /* About Section */
+  .sea-view-page .about-title{
+    font-size: 22px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+
+  .sea-view-page .about-desc{
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+
+  .sea-view-page .about-focus-title{
+    font-size: 13.5px;
+    margin-bottom: 10px;
+  }
+
+  .sea-view-page .about-bullets-grid{
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .sea-view-page .bullet-item{
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .sea-view-page .about-images-col{
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .sea-view-page .about-img-wrap{
+    height: 160px;
+    border-radius: 14px;
+  }
+
+  .sea-view-page .about-img-wrap.img-1{
+    width: 58%;
+  }
+
+  .sea-view-page .about-img-wrap.img-2{
+    width: 42%;
+  }
+
+  /* Stories Section */
+  .sea-view-page .stories-grid{
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .sea-view-page .story-card{
+    border-radius: 22px 8px 12px 12px;
+  }
+
+  .sea-view-page .story-img-wrap{
+    height: 175px;
+    border-top-left-radius: 22px;
+  }
+
+  .sea-view-page .story-content{
+    padding: 13px 14px 16px;
+  }
+
+  .sea-view-page .story-content h3{
+    font-size: 16.5px;
+    min-height: auto;
+    margin-bottom: 5px;
+    line-height: 1.25;
+  }
+
+  .sea-view-page .story-content p{
+    font-size: 12.5px;
+    line-height: 1.4;
+  }
+
+  /* Why Choose Section */
+  .sea-view-page .why-choose-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .sea-view-page .why-card{
+    height: 165px;
+    border-radius: 13px;
+  }
+
+  .sea-view-page .why-card-overlay{
+    padding: 12px 10px;
+  }
+
+  .sea-view-page .why-card-overlay h3{
+    font-size: 13.5px;
+    line-height: 1.22;
+  }
+
+  /* Video Section */
+  .sea-view-page .video-player-container{
+    border-radius: 22px 0 16px 12px;
+  }
+
+  .sea-view-page .main-video{
+    border-radius: 22px 0 16px 12px;
+  }
+
+  .sea-view-page .video-nav-btn img{
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.45));
+  }
+
+  .sea-view-page .video-nav-btn.prev-btn{
+    left: 6px;
+  }
+
+  .sea-view-page .video-nav-btn.next-btn{
+    right: 6px;
+  }
+
+  .sea-view-page .play-pulse-btn{
+    width: 44px;
+    height: 44px;
+  }
+
+  .sea-view-page .play-pulse-btn svg{
+    width: 18px;
+    height: 18px;
+  }
+
+  .sea-view-page .video-indicators{
+    margin-top: 14px;
+    gap: 6px;
+  }
+
+  .sea-view-page .video-dot{
+    width: 8px;
+    height: 8px;
+  }
+
+  .sea-view-page .video-dot.active{
+    width: 18px;
+    border-radius: 8px;
+  }
+
+  /* CTA Section */
+  .sea-view-page .cta-left-wrap{
+    height: 155px;
+  }
+
+  .sea-view-page .cta-fade-overlay{
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 45, 69, 0) 20%,
+      rgba(0, 45, 69, 0.8) 75%,
+      var(--deep-navy) 100%
+    );
+  }
+
+  .sea-view-page .cta-script-tag{
+        font-size: 27px;
+        top: 35px;
+        left: 16px;
+        width: 125px;
+  }
+
+  .sea-view-page .cta-right-content{
+    padding: 22px 14px 28px;
+  }
+
+  .sea-view-page .cta-title{
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+  .sea-view-page .cta-desc{
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .sea-view-page .cta-schedule-btn{
+    width: 100%;
+    justify-content: center;
+    padding: 12px 16px;
+    font-size: 13px;
+    gap: 8px;
+    border-radius: 8px;
+  }
+
+  .sea-view-page .cta-schedule-btn svg{
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Small Mobile Devices (max-width: 360px) */
+@media (max-width: 360px) {
+  .sea-view-page .container{
+    padding: 0 12px;
+  }
+
+  .sea-view-page .section-heading{
+    font-size: 21px;
+    margin-bottom: 18px;
+  }
+
+  .sea-view-page .hero-left{
+    height: 180px;
+  }
+
+  .sea-view-page .hero-script-tag{
+    font-size: 18px;
+    top: 12px;
+    left: 14px;
+    display: none;
+  }
+
+  .sea-view-page .hero-title{
+    font-size: 25px;
+    margin-bottom: 8px;
+  }
+
+  .sea-view-page .hero-location{
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .sea-view-page .hero-desc{
+    font-size: 12px;
+  }
+
+  .sea-view-page .feature-badge span{
+    font-size: 9.5px;
+  }
+
+  .sea-view-page .about-title{
+    font-size: 20px;
+  }
+
+  .sea-view-page .about-desc{
+    font-size: 12px;
+  }
+
+  .sea-view-page .about-img-wrap{
+    height: 135px;
+    border-radius: 10px;
+  }
+
+  .sea-view-page .story-img-wrap{
+    height: 150px;
+  }
+
+  .sea-view-page .story-content h3{
+    font-size: 15px;
+  }
+
+  .sea-view-page .story-content p{
+    font-size: 12px;
+  }
+
+  .sea-view-page .why-card{
+    height: 145px;
+    border-radius: 11px;
+  }
+
+  .sea-view-page .why-card-overlay{
+    padding: 10px 8px;
+  }
+
+  .sea-view-page .why-card-overlay h3{
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .sea-view-page .video-player-container{
+    border-radius: 18px 0 14px 10px;
+  }
+
+  .sea-view-page .main-video{
+    border-radius: 18px 0 14px 10px;
+  }
+
+  .sea-view-page .video-nav-btn img{
+    width: 28px;
+    height: 28px;
+  }
+
+  .sea-view-page .play-pulse-btn{
+    width: 40px;
+    height: 40px;
+  }
+
+  .sea-view-page .play-pulse-btn svg{
+    width: 16px;
+    height: 16px;
+  }
+
+  .sea-view-page .cta-left-wrap{
+    height: 135px;
+  }
+
+  .sea-view-page .cta-script-tag{
+    font-size: 18px;
+    top: 12px;
+    left: 14px;
+  }
+
+  .sea-view-page .cta-title{
+    font-size: 21px;
+  }
+
+  .sea-view-page .cta-desc{
+    font-size: 12px;
+  }
+}
